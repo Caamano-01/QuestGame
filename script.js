@@ -18,3 +18,16 @@ class Jogador {
         else this.nivel = 1;
     }
 }
+
+// classe questões
+class questoes{
+    constructor(pergunta, opcoes, resposta) {
+        this.pergunta = pergunta;
+        this.opcoes = opcoes;
+        this.resposta = resposta;
+    }
+
+    validar(respostaUser) {
+        return respostaUser === this.resposta;
+    }
+}
